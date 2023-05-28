@@ -1,0 +1,26 @@
+/* Import Style Start */
+
+@import url(./style.css);
+
+/* Import Style End */
+
+/* Import Font Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Import Font End */
+
+/* Main Style Start */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2C3333;
+}
+
+/* Main Style End */
