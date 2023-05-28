@@ -24,3 +24,12 @@ body {
 }
 
 /* Main Style End */
+
+/* Multi Class Start */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Multi Class End */
