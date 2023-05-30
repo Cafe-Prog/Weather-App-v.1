@@ -206,3 +206,38 @@
 }
 
 /* Weather Box End */
+
+/* Alert Box Start */
+
+.alert {
+    position: absolute;
+    top: 50px;
+    left: -230px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+.alert-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #ED2B2A;
+    color: #fff;
+    width: 230px;
+    height: 70px;
+    padding-left: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.alert-box h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.alert.active {
+    left: 30px;
+    opacity: 1;
+}
+
+/* Alert Box End */
