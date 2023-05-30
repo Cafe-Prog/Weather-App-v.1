@@ -1,7 +1,7 @@
 /* SearchBar Start */
 
 .search-bar {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .search-bar-form div {
@@ -54,3 +54,155 @@
 }
 
 /* SearchBar End */
+
+/* Weather Box Start */
+
+.weather-box {
+    margin-top: 30px;
+}
+
+.boxes {
+    position: relative;
+    width: 483px;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 585px;
+    animation: boxes .5s ease-in-out;
+}
+
+.boxes-container {
+    padding: 20px 30px 20px 30px;
+}
+
+.close-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-box span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: #999;
+    margin: 10px 0;
+    transform-origin: 1.5px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.close-box:hover.close-box span {
+    background-color: #000;
+}
+
+.close-box span:nth-child(1) {
+    transform: rotateZ(45deg);
+}
+
+.close-box span:nth-child(2) {
+    transform: rotateZ(-45deg);
+}
+
+.city-name {
+    display: flex;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.city-name span:nth-child(1) {
+    font-size: 1.9rem;
+}
+
+.city-name span:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: .7rem;
+    background-color: #395B64;
+    border-radius: 30%;
+    color: #fff;
+    margin-left: 5px;
+    margin-top: 17px;
+    transform: scale(.9);
+}
+
+.image {
+    text-align: center;
+    animation: weahterBoxImage .5s ease-in-out forwards;
+    animation-delay: .2s;
+    transform: scale(0);
+}
+
+.image img {
+    width: 220px;
+}
+
+.temp-sky-status {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.temp-sky-status p {
+    margin-top: -10px;
+    opacity: 0;
+    animation: tempAndSkyStatus .5s ease-in-out forwards;
+}
+
+.temp-sky-status p:nth-child(1) {
+    font-size: 2.8rem;
+    font-weight: 600;
+    animation-delay: .5s;
+}
+
+.temp-sky-status p:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    animation-delay: .5s;
+}
+
+.humidity-wind-speed {
+    display: flex;
+    align-items: center;
+}
+
+.humidity {
+    margin-right: auto;
+    transition-delay: 1.5s;
+}
+
+.wind-speed {
+    transition-delay: 1.5s;
+}
+
+.humidity-wind-speed-boxes {
+    animation: humidityAndWindSpeed 1s ease-in-out forwards;
+    /* opacity: 0; */
+    transform: scale(0);
+}
+
+.humidity-wind-speed div:nth-child(2) {
+    transition-delay: .6s;
+}
+
+.humidity-wind-speed div i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.humidity-wind-speed div p:nth-child(1) {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.humidity-wind-speed div p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Weather Box End */

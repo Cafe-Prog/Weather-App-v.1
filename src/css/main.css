@@ -1,6 +1,7 @@
 /* Import Style Start */
 
 @import url(./style.css);
+@import url(./keyframes.css);
 
 /* Import Style End */
 
@@ -30,6 +31,12 @@ body {
 .flex-center {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
 }
 
 /* Multi Class End */
