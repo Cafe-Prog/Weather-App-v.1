@@ -83,6 +83,10 @@ form.addEventListener('submit', (e) => {
             input.value = '';
             weatherBoxContainer.appendChild(weatherBox);
 
+            const closeButton = document.querySelector('.close-box');
+            closeButton.addEventListener('click', () => {
+                removeLastBox();
+            });
         })
         .catch(() => {
             let timer = 0;
